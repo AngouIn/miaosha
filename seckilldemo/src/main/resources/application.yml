@@ -1,1 +1,9 @@
-
+server:
+  port: 8080
+spring:
+  datasource:
+    username: springdb
+    password: springdb123
+    url: jdbc:mysql://193.112.252.35:3306/springdb
+mybatis:
+  type-aliases-package: com.jingege.pojo
