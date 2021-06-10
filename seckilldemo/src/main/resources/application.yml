@@ -5,5 +5,23 @@ spring:
     username: springdb
     password: springdb123
     url: jdbc:mysql://193.112.252.35:3306/springdb
+  redis:
+    host: 127.0.0.1
+    timeout: 5000
+  rabbitmq:
+    host: 192.168.229.128
+    username: jingege
+    password: jingege
+    virtual-host: /jingege
+    template:
+      exchange: miaosha.exchange
+    publisher-confirms: true
+  application:
+    name: seckillDemo
 mybatis:
   type-aliases-package: com.jingege.pojo
+logging:
+  file: seckill_log.log
+  level:
+    root: info
+

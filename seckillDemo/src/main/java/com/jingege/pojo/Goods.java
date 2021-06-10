@@ -2,28 +2,28 @@ package com.jingege.pojo;
 
 
 /**
- * 商品信息
+ * 商品库存信息
  */
 public class Goods {
 
-    private Integer goods_id;
-    private String good_name;
+    private Long goods_id;
+    private String goods_name;
     private Integer goods_stock;
 
-    public Integer getGoods_id() {
+    public Long getGoods_id() {
         return goods_id;
     }
 
-    public void setGoods_id(Integer goods_id) {
+    public void setGoods_id(Long goods_id) {
         this.goods_id = goods_id;
     }
 
     public String getGood_name() {
-        return good_name;
+        return goods_name;
     }
 
     public void setGood_name(String good_name) {
-        this.good_name = good_name;
+        this.goods_name = good_name;
     }
 
     public Integer getGoods_stock() {
@@ -38,7 +38,7 @@ public class Goods {
     public String toString() {
         return "Goods{" +
                 "goods_id=" + goods_id +
-                ", good_name='" + good_name + '\'' +
+                ", goods_name='" + goods_name + '\'' +
                 ", goods_stock=" + goods_stock +
                 '}';
     }
